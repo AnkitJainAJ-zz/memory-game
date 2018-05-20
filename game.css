@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+
+}
+
+.heading{
+    text-align:center;
+    padding: 8px;
+    background-color: #15b599;
+    border-radius: 20px;
+    color: #fffff0;
+    font-size:18px;
+}
+
+.imageContainer{
+    margin-top: 10px;
+    display:flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+    height:100%;
+    /*margin: auto;*/
+    flex:1;
+    position: relative;
+    /*background: gray*/
+}
+
+.column {
+    flex: 1;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width:100%;
+}
+
+.grid{
+  position: relative;
+/*  margin:4px;
+  border: 2px solid gray;
+*/}
+
+.singleImgContainer{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.singlImgWrapper{
+    margin: auto;
+}
+.singleImg{
+    width:200px;
+    height:200px;
+}
+
+.highlight{
+  border: 4px solid red ;
+}
+
+.timer {
+    font-size: 35px;
+    color: red;
+    margin:auto;
+}
+
+.score{
+  margin: auto;
+  font-size: 25px;
+  color: deepskyblue;
+  border: 1px solid;
+  padding: 6px
+}
+
+.winner{
+  font-size: 30px;
+  color: darkgreen;
+  animation: animatezoom 0.6s linear forwards;
+}
+
+/*@keyframes fadein {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: : 1;  }
+}*/
+
+@keyframes animatezoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.wrong {
+    position: absolute;
+    /*font-size: 40px;*/
+    top: 0;
+    left: 0;
+/*    margin-left: -10px;
+    margin-top: -23px;*/
+    /*width:200px;*/
+    /*height: 200px;*/
+    background: red;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    animation: fadeinout 2s linear forwards;
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.wrongText{
+  margin: auto;
+  font-size: 38px;
+  color: cornsilk;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  top:50%;
+  left:41%;
+  position:absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

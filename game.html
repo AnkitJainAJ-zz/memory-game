@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<title> Memory Game </title>
+	<link rel="stylesheet" href="./game.css">
+	<script src="./game.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="heading">Test your Photographic Memory </div>
+		<div class="imageContainer">
+			<div class="row" id="row">
+				<div class="column">
+					<div id="0" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="1" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="2" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					
+				</div>
+				<div class="column">
+					<div id="3" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="4" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="5" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+				</div>
+				<div class="column">
+					<div id="6" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="7" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+					<div id="8" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+						<img src="./placeholder_play.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="singleImgContainer">
+				<div class="timer" id='timer'>
+					Images will be gone in 20
+				</div>
+				<div class="singlImgWrapper">
+					<p>Drag this image into correct box</p>
+					<img src="./placeholder_play.jpg" id="singleImg" class="singleImg" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="score" id="score">
+					Total Score: 0
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
