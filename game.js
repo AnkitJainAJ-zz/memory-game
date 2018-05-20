@@ -153,7 +153,7 @@ function drop(event){
 		score++;
 		scoreDiv.innerHTML = "Total Score: " + score;
 
-		if(score<2){
+		if(score<9){
 			//showing next image to play with
 			randomImgElement.src = playImgPool.pop();
 		}
